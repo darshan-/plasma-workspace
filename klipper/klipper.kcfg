@@ -65,9 +65,9 @@
     </entry>
     <entry name="MaxClipItems" type="Int">
         <label>History size:</label>
-        <default>20</default>
+        <default>4096</default>
         <min>1</min>
-        <max>2048</max>
+        <max>1048576</max>
 	<tooltip>The clipboard history will store up to this many items.</tooltip>
     </entry>
     <entry key="ActionListChanged" name="ActionList" type="Int">
