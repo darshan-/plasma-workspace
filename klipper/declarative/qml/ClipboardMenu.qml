@@ -180,25 +180,6 @@ PlasmaComponents3.ScrollView {
                     }
                 }
             }
-
-            PlasmaComponents3.ToolButton {
-                id: clearHistoryButton
-                visible: clipboardMenu.showsClearHistoryButton
-
-                icon.name: "edit-clear-history"
-
-                display: PlasmaComponents3.AbstractButton.IconOnly
-                text: i18nd("klipper", "Clear History")
-
-                onClicked: {
-                    clipboardMenu.model.clearHistory();
-                    filter.clear();
-                }
-
-                PlasmaComponents3.ToolTip {
-                    text: clearHistoryButton.text
-                }
-            }
         }
     }
 

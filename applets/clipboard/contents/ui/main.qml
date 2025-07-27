@@ -56,19 +56,6 @@ PlasmoidItem {
         (fullRepresentationItem.clipboardMenu as Private.ClipboardMenu).filter.clear();
     }
 
-    Plasmoid.contextualActions: [
-        PlasmaCore.Action {
-            id: clearAction
-            text: i18n("Clear History")
-            icon.name: "edit-clear-history"
-            visible: !main.isClipboardEmpty && !(main.fullRepresentationItem?.clipboardMenu as Private.ClipboardMenu)?.editing
-            onTriggered: {
-                historyModel.clearHistory();
-                main.clearSearchField()
-            }
-        }
-    ]
-
     PlasmaCore.Action {
         id: configureAction
         text: i18n("Configure Clipboard…")
