@@ -1,3 +1,8 @@
 kquitapp6 plasmashell
 cp -r ~/staging/usr/share/plasma/plasmoids/org.kde.plasma.clipboard/ ~/.local/share/plasma/plasmoids/
 LD_LIBRARY_PATH=~/staging/usr/lib/x86_64-linux-gnu/ kstart plasmashell
+
+
+
+cp -r ~/staging/usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/ ~/.local/share/plasma/plasmoids/
+cp -r ~/staging/usr/share/plasma/plasmoids/org.kde.plasma.systemtray/ ~/.local/share/plasma/plasmoids/
